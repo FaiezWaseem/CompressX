@@ -1,0 +1,42 @@
+body {
+  overflow: hidden;
+}
+
+#fileContainer {
+  height: 95vh;
+}
+
+#filelist {
+  overflow-y: scroll;
+  height: 88vh;
+}
+
+.col-7 img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(168, 44, 44);
+}
+
+
+
+#converter-container {
+  visibility: hidden;
+}

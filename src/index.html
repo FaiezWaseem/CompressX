@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CompressX</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="sb-nav-fixed">
+
+
+    <div class="row p-3 gap-2 justify-content-center">
+        <div class="col-7 border border-secondary rounded p-3 justify-content-center align-items-center d-flex"
+            id="fileContainer">
+            <div class="p-2 d-flex flex-column" id="file-select">
+                <img src="./assets/img/folder_files.svg" class="rounded" alt="">
+                <hr>
+                <button class="btn btn-secondary" id="selectFile">Select Files</button>
+            </div>
+            <div id="filelist" class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+
+            </div>
+        </div>
+
+        <div class="col-4 border border-secondary rounded justify-content-center p-3" style="height: 95vh; overflow-y: scroll;">
+            <div class="card">
+                <div class="card-header">
+                    Options
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-7">Output Folder : </div>
+                            <div class="col-5">
+                                <select class="form-select" id="OutFolder" aria-label="Default select example">
+                                    <option value="downloads" selected>Downloads</option>
+                                    <option value="samefolder">Same folder</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-7">Video Quality</div>
+                            <div class="col-5">
+                                <select class="form-select" id="VideoBitrate" aria-label="Default select example">
+                                    <option value="350k">240p</option>
+                                    <option value="700k" selected>360p</option>
+                                    <option value="1200k">480p</option>
+                                    <option value="2500k">720p</option>
+                                    <option value="5000k">1080p</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-primary m-3" id="clear">Clear Selected Files</button>
+                <button class="btn btn-primary m-3" id="compress">Compress</button>
+            </div>
+            <div class="card my-2" id="converter-container">
+                <div class="card-header">
+                    Converting...
+                </div>
+                <ul class="list-group list-group-flush">
+   
+                </ul>
+                <div class="p-3" id="progress-list" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./assets/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

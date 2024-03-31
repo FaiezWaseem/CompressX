@@ -1,0 +1,5 @@
+/dist/
+/out/
+.vs
+test.js
+node_modules
